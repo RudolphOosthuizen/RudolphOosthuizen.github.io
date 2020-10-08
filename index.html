@@ -53,8 +53,11 @@
                                 <button onclick="scrollToId('fun')" type="button" class="btn btn-secondary btn-outline-info btn-lg">Fun Stuff</button>
                             </div>
                             <div class="text-myPrimary">
-                                <a class="text-decoration-none" href="CVpdf/Rudolph_Oosthuizen_CV.pdf" download>Download CV in PDF form</a>
+                                <a onclick="showAlert()" class="text-decoration-none" href="CVpdf/Rudolph_Oosthuizen_CV.pdf" download>Download CV in PDF form</a>
                             </div>
+                            <div hidden class="alert alert-success" role="alert">
+                                PDF downloaded succesfully!
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -74,11 +77,11 @@
         <br>
 
         <!-- Personal Life -->
-        <div id="perLife" class="row border border-primary div-padding pInfo container-fluid rounded myMargins">
+        <div id="perLife" class="row border border-primary div-padding pInfo container-fluid rounded myMargins text-myPrimary">
             <p id="PI">
                 Personal Life
             </p>
-            <p>
+            <p class="mySecondary">
                 I am a self-motivated individual who enjoys taking on a leadership position. I am a fast learner and a creative, critical thinker. I tend to be extremely flexible, and I always welcome environments where I am challenged. I am an excellent collaborator and can confidently say that my calm and composed nature is my predominant attribute. I enjoy working with people and can effortlessly manage conflict. I am neat, well organised, and able to self-manage in a fast-paced environment.
             </p>
         </div>
@@ -87,15 +90,15 @@
         <br>
 
         <!-- Professional Life -->
-        <div id="proLife" class="row border border-success div-padding proInfo container-fluid rounded myMargins">
+        <div id="proLife" class="row border border-success div-padding proInfo container-fluid rounded myMargins text-myPrimary">
             <p id="PI">
                 Professional Life
             </p>
-            <p>
+            <p class="mySecondary">
                 CAREER OBJECTIVE<br>
                 I am currently a third year B.Sc. Information Technology student studying at North West University, Potchefstroom. I intend to complete my degree by the end of 2020. I am searching for an exacting graduate program that will provide me with an opportunity to master new skills, prove my worth to the industry and gain relevant experience. Therefore, I am searching for a successful company where I can become a part of a dynamic team of employees and make a considerable contribution towards the success of the company.
             </p>
-            <p>
+            <p class="mySecondary">
                 <h class="text-lg-right">PROFESSIONAL SKILLS<br></h>
                 ▪ Fluent in English and Afrikaans and can type confidently.<br>
                 ▪ Excellent communication skills both written and oral.<br>
@@ -111,43 +114,129 @@
 
         <!-- Hobbies & Experiences -->
         <div id="hobEx" class="row border border-danger div-padding HobEx container-fluid rounded myMargins">
-            LIFE EXPERIENCE<br>
-                Culture:                        Hombré Single Sêr (2017)<br>
-                                                Hombré Culture Committee Band Co-Coach (2016 & 2017)<br>
-                                                Hombré Single Sêr Top 5 (2016)<br>
-                                                Hombré Bingle Sêr (2016)<br>
-                                                Truida Kestell Flute Ensemble (2007-2010)<br>
-                                                Truida Kestell Choir (2004-2010)<br>
-                Sport:                          First Year Rugby Team Finals Hombré Men’s Hostel (2017)<br>
-                                                Jukskei Inter-Provincials (2013)<br>
-                Community Activities:           Member of Hombré SJGD committee (2016 & 2017)<br>
-                Interests:                      Music, Hiking, Computer Gaming, Squash and Jogging<br>
+            <div id="PI" class=" row text-myPrimary">
+                Previous Jobs
+            </div>
+            <div class=row>
+                <div class="col-3 border border-danger rounded bot2text">
+                    Culture<br>
+                    Hombré Single Sêr (2017)
+                    Hombré Culture Committee Band Co-Coach (2016 & 2017)
+                    Hombré Single Sêr Top 5 (2016)
+                    Hombré Bingle Sêr (2016)
+                    Truida Kestell Flute Ensemble (2007-2010)
+                    Truida Kestell Choir (2004-2010)
+                </div>
+                <div class="col-3 border border-danger rounded bot2text">
+                    Sport<br>
+                    First Year Rugby Team Finals Hombré Men’s Hostel (2017)
+                    Jukskei Inter-Provincials (2013)
+                </div>
+                <div class="col-3 border border-danger rounded bot2text">
+                    Community Activities<br>
+                    Member of Hombré SJGD committee (2016 & 2017)
+                </div>
+                <div class="col-3 border border-danger rounded bot2text">
+                    Interests<br>
+                    Music, Hiking, Computer Gaming, Squash and Jogging
+                </div>
+            </div>
         </div>
 
         <br>
         <br>
 
         <!-- Previous Jobs -->
-        <div id="preJob" class="row border border-warning div-padding preJob container-fluid rounded myMargins">
-            <p id="PI">
+        <div id="preJob" class="row border border-warning div-padding preJob container-fluid rounded myMargins ">
+            <div id="PI" class=" row text-myPrimary">
                 Previous Jobs
-            </p>
-            <p>
-                I am a self-motivated individual who enjoys taking on a leadership position. I am a fast learner and a creative, critical thinker. I tend to be extremely flexible, and I always welcome environments where I am challenged. I am an excellent collaborator and can confidently say that my calm and composed nature is my predominant attribute. I enjoy working with people and can effortlessly manage conflict. I am neat, well organised, and able to self-manage in a fast-paced environment.
-            </p>
+            </div>
+            <div class=row>
+                <div class="col-4 border border-danger rounded bot2text">
+                    OCEAN BASKET<br>
+                    BETHLEHEM
+                    Server
+                    (Holiday
+                    Job description:
+                    *Serving food,
+                    keeping tables and floors clean,
+                    and placing cutlery. *Ensuring a
+                    friendly, family environment for
+                    dining. *Ensuring that customer
+                    orders are correct and
+                    delivered within a reasonable
+                    amount of time.<br>
+                    Dec 2016 - Jan 2017
+                </div>
+                <div class="col-4 border border-danger rounded bot2text">
+                    PCNET BETHLEHEM<br>
+                    Assistant to
+                    IT Salesman
+                    /Technician (Holiday
+                    Job description
+                    : *Assisting with
+                    building PC's and installing
+                    various LAN a t homes and
+                    businesses. *Monitoring and
+                    ta king care of the company
+                    vehicle to ensure cleanliness
+                    and sufficient fuel levels.<br>
+                    Jun2016 - Jul 201 6
+                </div>
+                <div class="col-4 border border-danger rounded bot2text">
+                    REV ENTERPRISE<br>
+                    Video
+                    C aptioner / Audio
+                    Transcriber (Part time
+                    Freelance P osition
+                    Job description: *
+                    Transcribing
+                    audio files as accurately as
+                    possible in order to ensure
+                    client satisfaction . Captioning
+                    Video files as accurately as
+                    possible in order to ensure
+                    client satisfaction. *Ensuring
+                    absolute confidentiality of audio
+                    and video files received by
+                    clients<br>
+                    Feb 2019 - Current
+    
+                </div>
+            </div>
         </div>
 
         <br>
         <br>
 
         <!-- Fun Stuff -->
-        <div id="fun" class="row border border-info div-padding fun container-fluid rounded myMargins">
-            <p id="PI">
+        <div id="fun" class="row border border-info div-padding fun container-fluid rounded myMargins text-myPrimary">
+            <p >
                 Fun Stuff
             </p>
-            <p>
-                I am a self-motivated individual who enjoys taking on a leadership position. I am a fast learner and a creative, critical thinker. I tend to be extremely flexible, and I always welcome environments where I am challenged. I am an excellent collaborator and can confidently say that my calm and composed nature is my predominant attribute. I enjoy working with people and can effortlessly manage conflict. I am neat, well organised, and able to self-manage in a fast-paced environment.
-            </p>
+            <div class="col-6">
+                <h3>
+                    Some songs to listen to:
+
+                </h3>
+                <iframe src="https://open.spotify.com/embed/playlist/3IhDcndJr8nzgNEQwrmnTj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="col-6">
+                <h3>
+                    Some Important Videos:
+                </h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLFsQleAWXsj_4yDeebiIADdH5FMayBiJo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="row">
+                <h3>
+                    Guess what people draw in this fun game:
+                </h3>
+                <br>
+                <br>
+                <iframe src="https://www.gameflare.com/embed/skribblio/" frameborder="10" scrolling="no" width="980" height="785" allowfullscreen></iframe>
+            </div>
+            
+            
         </div>
             
 
